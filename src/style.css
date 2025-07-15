@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  scroll-behavior: smooth;
+}
+#yuwin {
+  color: #fefefe;
+  font-weight: bolder;
+  font-size: 23px;
+}
+#nav-section {
+  color: #fefefe;
+  font-weight: bolder;
+  font-size: 13px;
+}
+#nav:hover{
+    opacity: 60%;
+}
+#utama {
+  background-image: linear-gradient(190deg, #34374c, #483aa0, #7a81b2);
+}
+nav{
+  background-image: linear-gradient(200deg, #34374c, #483aa0);
+}
+
+/* #hero p:nth-child(1),
+#hero p:nth-child(2) {
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fbf7ff;
+} */
+
+#hero p:nth-child(3) {
+  color: #fbf7ff;
+  font-size: 16px;
+}
+
+#group {
+  border: 2px solid #fbf7ff;
+  padding: 15px;
+  border-radius: 5rem;
+  font-weight: bold;
+  transition: 0.1s ease-in;
+  color: #fbf7ff;
+}
+
+#group:hover {
+  background-color: #fbf7ff;
+  color: rgb(31, 27, 27);
+}
+
+#tentang {
+  background-color: #fbf7ff;
+}
+
+#nav {
+  color: #fbf7ff;
+}
+
+#tentang-child {
+  color: #2c2e3e;
+}
+
+#tentang-teks {
+  width: 500px;
+  height: 200px;
+}
+
+#img-box {
+  width: 5rem;
+  height: 5rem;
+}
+
+#test1,
+#test2,
+#test3,
+#test4 {
+  width: 19rem;
+  border-radius: 16px;
+}
+
+#buy-button{
+  border:2px solid #483AA0;
+  transition: 0.1s ease-in-out;
+}
+
+#buy-button:hover{
+  border: 2px solid #483AA0;
+  background-color: #FBF7FF;
+  color: #483AA0;
+  transition: 0.1s ease-in-out;
+}
+#logo-brand li img {
+  width: 220px; /* Atur lebar */
+  height: auto; /* Tinggi menyesuaikan agar proporsional */
+  object-fit: contain; /* Biar gambar tidak terpotong */
+  display: block; /* Hindari space bawah default inline image */
+}
+
+@media (max-width: 768px){
+    #logo-brand li img{
+        width: 150px;
+    }
+}
+
+
+
+.product-card{
+  flex-shrink: 0;
+
+}
+
+footer {
+  background-image: linear-gradient(10deg, #34374c, #483aa0, #7a81b2);
+}
+
+svg {
+  width: 30px;
+  height: 30px;
+}
+
+svg:hover {
+  opacity: 0.5;
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.marquee-right {
+  animation: marquee-right 20s linear infinite;
+}

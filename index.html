@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="icon" type="image/svg+xml" href="src/img/Logo Yuwin Watch putih 1.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yuwin Watch</title>
+  </head>
+
+  <body class="bg-main-white max-w-screen-2xl mx-auto overflow-y-scroll">
+    <nav class="fixed w-full shadow-lg z-10 opacity-95 max-w-screen-2xl mx-auto">
+      <div class="mx-auto max-w-7xl lg:px-8">
+        <div class="flex h-16 items-center justify-between p-4">
+          <!-- KIRI: Logo dan Nama -->
+          <div class="flex items-center gap-x-4">
+            <img class="h-12 w-auto" src="src/img/Logo Yuwin Watch putih 1.svg" alt="Your Company" />
+            <p class="text-main-white font-bold text-xl">Yuwin Watch</p>
+          </div>
+
+          <!-- KANAN: Navigasi dan Hamburger -->
+          <div class="flex items-center gap-x-6">
+            <!-- Menu Navigasi (Desktop) -->
+            <div class="hidden sm:block">
+              <div class="flex space-x-4">
+                <a href="#utama" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Beranda</a>
+                <a href="#tentang" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Tentang</a>
+                <a href="#produk" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Produk</a>
+                <a href="#kontak" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Kontak</a>
+              </div>
+            </div>
+
+            <!-- Hamburger (Mobile) -->
+            <div class="sm:hidden">
+              <button
+                id="hamburger-button"
+                type="button"
+                class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Open main menu</span>
+                <svg class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <svg class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="sm:hidden hidden" id="mobile-menu">
+          <div class="bg-main-black space-y-1 px-2 pb-3 pt-2">
+            <a href="#utama" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Beranda</a>
+            <a href="#tentang" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white" aria-current="page">Tentang</a>
+            <a href="#produk" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Produk</a>
+            <a href="#kontak" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Kontak</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- HALAMAN UTAMA -->
+    <div class="py-32" id="utama">
+      <div id="hero" class="flex flex-col-reverse md:flex-row p-6 md:p-14 h-auto w-full items-center justify-evenly md:justify-around gap-6">
+        <div id="get" class="flex flex-col justify-evenly text-center md:text-left">
+          <h1 class="text-5xl sm:text-6xl md:text-[85px] text-main-white font-bold leading-snug max-w-lg">Get your own Watch</h1>
+
+          <p class="py-6 text-sm sm:text-base md:text-lg text-main-white opacity-90">Servis & Jual Jam Tangan Berkualitas — Tingkatkan Gaya, Tepat Waktu!</p>
+
+          <!-- TOMBOL -->
+          <a id="group" href="https://maps.app.goo.gl/h2EhLTbgPXh1fCGXA" target="_blank" class="w-max mx-auto md:mx-0 text-white px-4 py-2 rounded-full border border-white hover:bg-white hover:text-main-green transition"> Find Us </a>
+        </div>
+
+        <!-- GAMBAR -->
+        <div>
+          <img src="src/img/Group 24.svg" alt="hero" class="w-64 md:w-[425px] h-auto" />
+        </div>
+      </div>
+    </div>
+    <!-- AKHIR HALAMAN UTAMA -->
+
+    <!-- HALAMAN TENTANG -->
+    <div id="tentang" class="w-full h-fit flex flex-col items-center p-8 md:mb-24">
+      <!-- Judul -->
+      <div class="flex flex-col w-full font-bold items-center text-center gap-y-4 px-4 md:px-10" id="tentang-child">
+        <div class="flex flex-col items-center gap-2 sm:gap-3 md:flex-row md:gap-4">
+          <p class="text-2xl sm:text-3xl md:text-4xl text-main-black">Tentang</p>
+          <span class="inline-block px-4 py-2 rounded-lg bg-dark-purple text-main-white text-2xl sm:text-3xl md:text-4xl">Yuwin Watch</span>
+        </div>
+      </div>
+
+      <!-- Konten Utama -->
+      <div id="main-tentang" class="w-full h-auto flex flex-col md:flex-row justify-evenly items-center gap-6 mt-16 px-4 md:px-10">
+        <!-- Gambar -->
+        <img src="src/img/Man thinking about the question.svg" alt="Ilustrasi" class="w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96" />
+
+        <!-- Teks -->
+        <div id="tentang-teks-box" class="flex justify-center items-center h-auto w-full">
+          <p class="text-sm sm:text-base md:text-lg lg:text-xl text-justify leading-relaxed">
+            <span class="font-bold text-sm sm:text-base md:text-lg lg:text-xl text-dark-purple">Yuwin Watch</span> merupakan toko jam tangan terpercaya yang berlokasi di Kecamatan Cileunyi, Kabupaten Bandung. Berdiri sejak tahun 2016, kami
+            menghadirkan berbagai pilihan jam tangan berkualitas serta layanan servis profesional untuk berbagai jenis jam.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="why" class="h-fit w-full p-6 sm:p-8 flex flex-col items-center mt-6">
+      <p class="text-center font-bold text-main-black text-xl sm:text-lg md:text-2xl">Mengapa harus memilih <span>Kami</span> ?</p>
+
+      <div id="why-box" class="mt-6 flex flex-wrap w-full justify-center gap-6">
+        <!-- Box 1 -->
+        <div id="why-box-layanan" class="bg-dark-purple border border-slate-300 rounded-3xl p-4 sm:p-6 md:p-8 w-64 sm:w-72 md:w-80 shadow-sm">
+          <div id="layanan" class="flex flex-col items-center">
+            <img id="img-box" src="src/img/service.svg" alt="" class="w-20 sm:w-24 md:w-28" />
+            <p class="text-main-white mt-3 text-center font-bold text-sm sm:text-base">Pelayanan yang nyaman</p>
+            <p class="text-xs sm:text-sm text-main-white text-center mt-3">Kami menyediakan pelayanan yang ramah dan responsif, memastikan setiap pelanggan merasa dihargai dan dibantu dengan maksimal selama proses pembelian.</p>
+          </div>
+        </div>
+
+        <!-- Box 2 -->
+        <div id="why-box-price" class="bg-dark-purple border border-slate-300 rounded-3xl p-4 sm:p-6 md:p-8 w-64 sm:w-72 md:w-80 shadow-sm">
+          <div id="price" class="flex flex-col items-center">
+            <img id="img-box" src="src/img/low price.svg" alt="" class="w-20 sm:w-24 md:w-28" />
+            <p class="text-main-white mt-3 text-center font-bold text-sm sm:text-base">Harga Terjangkau</p>
+            <p class="text-xs sm:text-sm text-main-white text-center mt-3">Kami menawarkan berbagai pilihan jam tangan dengan harga yang bersaing, menjadikan kualitas premium tetap terjangkau untuk semua kalangan.</p>
+          </div>
+        </div>
+
+        <!-- Box 3 -->
+        <div id="why-box-guaranteed" class="bg-dark-purple border border-slate-300 rounded-3xl p-4 sm:p-6 md:p-8 w-64 sm:w-72 md:w-80 shadow-sm">
+          <div id="guaranteed" class="flex flex-col items-center">
+            <img id="img-box" src="src/img/guarantee.svg" alt="" class="w-20 sm:w-24 md:w-28" />
+            <p class="text-main-white mt-3 text-center font-bold text-sm sm:text-base">Bergaransi</p>
+            <p class="text-xs sm:text-sm text-main-white text-center mt-3">Setiap produk yang kami jual dilengkapi dengan garansi resmi, memberikan Anda rasa aman dan kepercayaan penuh terhadap kualitas jam tangan yang dibeli.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AKHIR HALAMAN TENTANG -->
+
+    <!-- MARQUEE -->
+
+    <div id="marquee" class="w-full max-w-8xl mx-auto px-4 md:px-6 py-24">
+      <div class="text-center">
+        <!-- Logo Carousel animation -->
+        <div
+          x-data="{}"
+          x-init="$nextTick(() => {
+                        let ul = $refs.logos;
+                        ul.insertAdjacentHTML('afterend', ul.outerHTML);
+                        ul.nextSibling.setAttribute('aria-hidden', 'true');
+                    })"
+          class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
+        >
+          <ul id="logo-brand" x-ref="logos" class="flex items-center justify-center list-none gap-6 md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+            <li>
+              <img src="src/img/alba-removebg-preview.png" class="" alt="" />
+            </li>
+            <li>
+              <img src="src/img/casio.png" alt="Disney" />
+            </li>
+            <li>
+              <img src="src/img/cristie-removebg-preview.png" alt="" />
+            </li>
+            <li>
+              <img src="src/img/gshock-removebg-preview.png" alt="" />
+            </li>
+            <li>
+              <img src="src/img/qnq.png" alt="Spark" />
+            </li>
+            <li>
+              <img src="src/img/seiko-removebg-preview.png" alt="" />
+            </li>
+            <li>
+              <img src="src/img/swiss-removebg-preview.png" alt="" />
+            </li>
+          </ul>
+        </div>
+        <!-- End: Logo Carousel animation -->
+      </div>
+    </div>
+
+    <!-- END MARQUEE -->
+
+    <div class="p-10 font-bold">
+      <p class="text-center text-main-black text-xl sm:text-lg md:text-2xl">Temukan berbagai pilihan jam tangan eksklusif yang sesuai dengan gaya Anda</p>
+    </div>
+
+    <!-- HALAMAN PRODUK TERLARIS -->
+    <div id="produk" class="h-auto w-full flex flex-col">
+      <!-- HALAMAN PRODUK TERLARIS -->
+      <div id="terlaris" class="p-8">
+        <div id="terlaris-box" class="border border-solid border-slate-300 p-8 rounded-3xl">
+          <div id="terlaris-text" class="flex flex-row justify-between">
+            <p class="text-xl sm:text-2xl md:text-4xl font-bold text-main-black">Produk Terlaris</p>
+          </div>
+          <div id="terlaris-parent-card" class="flex gap-5 p-8 overflow-x-auto w-full">
+            <!-- CARDs --> 
+
+            <div class="product-card flex flex-col w-60 max-w-sm rounded-3xl shadow-[0px_10px_15px_-3px_rgba(24,_22,_22,_0.1)]">
+              <a href="./product.html">
+                <div class="h-2/3">
+                  <img class="w-full h-full object-cover rounded-3xl" src="src/img/test2.jpeg" alt="product image" />
+                </div>
+                <div class="px-5 pb-5 flex flex-col mt-3 justify-evenly gap-2" class="">
+                  <h5 class="text-base font-semibold tracking-tight text-main-black">Apple Watch Series 7 GPS</h5>
+                  <span class="text-main-black text-xs">Tersisa 20 | Model Pria</span>
+                  <div class="flex items-start space-x-1">
+                    <span class="text-2xl font-bold text-main-black">99k</span>
+                    <span class="text-sm text-main-black opacity-50 relative top-2">
+                      <del>150K</del>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="product-card flex flex-col w-60 max-w-sm rounded-3xl shadow-[0px_10px_15px_-3px_rgba(24,_22,_22,_0.1)]">
+              <a href="./product.html">
+                <div class="h-2/3">
+                  <img class="w-full h-full object-cover rounded-3xl" src="src/img/test2.jpeg" alt="product image" />
+                </div>
+                <div class="px-5 pb-5 flex flex-col mt-3 justify-evenly gap-2" class="">
+                  <h5 class="text-base font-semibold tracking-tight text-main-black">Apple Watch Series 7 GPS</h5>
+                  <span class="text-main-black text-xs">Tersisa 20 | Model Pria</span>
+                  <div class="flex items-start space-x-1">
+                    <span class="text-2xl font-bold text-main-black">99k</span>
+                    <span class="text-sm text-main-black opacity-50 relative top-2">
+                      <del>150K</del>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="product-card flex flex-col w-60 max-w-sm rounded-3xl shadow-[0px_10px_15px_-3px_rgba(24,_22,_22,_0.1)]">
+              <a href="./product.html">
+                <div class="h-2/3">
+                  <img class="w-full h-full object-cover rounded-3xl" src="src/img/test2.jpeg" alt="product image" />
+                </div>
+                <div class="px-5 pb-5 flex flex-col mt-3 justify-evenly gap-2" class="">
+                  <h5 class="text-base font-semibold tracking-tight text-main-black">Apple Watch Series 7 GPS</h5>
+                  <span class="text-main-black text-xs">Tersisa 20 | Model Pria</span>
+                  <div class="flex items-start space-x-1">
+                    <span class="text-2xl font-bold text-main-black">99k</span>
+                    <span class="text-sm text-main-black opacity-50 relative top-2">
+                      <del>150K</del>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="product-card flex flex-col w-60 max-w-sm rounded-3xl shadow-[0px_10px_15px_-3px_rgba(24,_22,_22,_0.1)]">
+              <a href="./product.html">
+                <div class="h-2/3">
+                  <img class="w-full h-full object-cover rounded-3xl" src="src/img/test2.jpeg" alt="product image" />
+                </div>
+                <div class="px-5 pb-5 flex flex-col mt-3 justify-evenly gap-2" class="">
+                  <h5 class="text-base font-semibold tracking-tight text-main-black">Apple Watch Series 7 GPS</h5>
+                  <span class="text-main-black text-xs">Tersisa 20 | Model Pria</span>
+                  <div class="flex items-start space-x-1">
+                    <span class="text-2xl font-bold text-main-black">99k</span>
+                    <span class="text-sm text-main-black opacity-50 relative top-2">
+                      <del>150K</del>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="product-card flex flex-col w-60 max-w-sm rounded-3xl shadow-[0px_10px_15px_-3px_rgba(24,_22,_22,_0.1)]">
+              <a href="./product.html">
+                <div class="h-2/3">
+                  <img class="w-full h-full object-cover rounded-3xl" src="src/img/test2.jpeg" alt="product image" />
+                </div>
+                <div class="px-5 pb-5 flex flex-col mt-3 justify-evenly gap-2" class="">
+                  <h5 class="text-base font-semibold tracking-tight text-main-black">Apple Watch Series 7 GPS</h5>
+                  <span class="text-main-black text-xs">Tersisa 20 | Model Pria</span>
+                  <div class="flex items-start space-x-1">
+                    <span class="text-2xl font-bold text-main-black">99k</span>
+                    <span class="text-sm text-main-black opacity-50 relative top-2">
+                      <del>150K</del>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            
+
+            
+
+           
+          </div>
+        </div>
+      </div>
+
+      <!-- HALAMAN KATEGORI -->
+      <div id="kategori" class="p-8">
+        <div id="kategori-box" class="border border-solid border-slate-300 p-8 rounded-3xl">
+          <div id="kategori-text" class="flex flex-row justify-between items-center">
+            <p class="text-xl sm:text-2xl md:text-4xl font-bold text-main-black">Kategori</p>
+            <p><a href="#" class="hover:underline hover:poin text-xs">Lihat Semua</a></p>
+          </div>
+          <div id="kategori-parent-card" class="flex gap-5 p-8 overflow-x-auto w-full">
+            <!-- CARDs -->
+
+            <div class="product-card flex flex-col w-60 max-w-sm rounded-3xl shadow-[0px_10px_15px_-3px_rgba(24,_22,_22,_0.1)]">
+              <a href="./product.html">
+                <div class="h-2/3">
+                  <img class="w-full h-full object-cover rounded-3xl" src="src/img/test2.jpeg" alt="product image" />
+                </div>
+                <div class="px-5 pb-5 flex flex-col mt-3 justify-evenly gap-2" class="">
+                  <h5 class="text-base font-semibold tracking-tight text-main-black">Apple Watch Series 7 GPS</h5>
+                  <span class="text-main-black text-xs">Tersisa 20 | Model Pria</span>
+                  <div class="flex items-start space-x-1">
+                    <span class="text-2xl font-bold text-main-black">99k</span>
+                    <span class="text-sm text-main-black opacity-50 relative top-2">
+                      <del>150K</del>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="product-card flex flex-col w-60 max-w-sm rounded-3xl shadow-[0px_10px_15px_-3px_rgba(24,_22,_22,_0.1)]">
+              <a href="./product.html">
+                <div class="h-2/3">
+                  <img class="w-full h-full object-cover rounded-3xl" src="src/img/test2.jpeg" alt="product image" />
+                </div>
+                <div class="px-5 pb-5 flex flex-col mt-3 justify-evenly gap-2" class="">
+                  <h5 class="text-base font-semibold tracking-tight text-main-black">Apple Watch Series 7 GPS</h5>
+                  <span class="text-main-black text-xs">Tersisa 20 | Model Pria</span>
+                  <div class="flex items-start space-x-1">
+                    <span class="text-2xl font-bold text-main-black">99k</span>
+                    <span class="text-sm text-main-black opacity-50 relative top-2">
+                      <del>150K</del>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="product-card flex flex-col w-60 max-w-sm rounded-3xl shadow-[0px_10px_15px_-3px_rgba(24,_22,_22,_0.1)]">
+              <a href="./product.html">
+                <div class="h-2/3">
+                  <img class="w-full h-full object-cover rounded-3xl" src="src/img/test2.jpeg" alt="product image" />
+                </div>
+                <div class="px-5 pb-5 flex flex-col mt-3 justify-evenly gap-2" class="">
+                  <h5 class="text-base font-semibold tracking-tight text-main-black">Apple Watch Series 7 GPS</h5>
+                  <span class="text-main-black text-xs">Tersisa 20 | Model Pria</span>
+                  <div class="flex items-start space-x-1">
+                    <span class="text-2xl font-bold text-main-black">99k</span>
+                    <span class="text-sm text-main-black opacity-50 relative top-2">
+                      <del>150K</del>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="product-card flex flex-col w-60 max-w-sm rounded-3xl shadow-[0px_10px_15px_-3px_rgba(24,_22,_22,_0.1)]">
+              <a href="./product.html">
+                <div class="h-2/3">
+                  <img class="w-full h-full object-cover rounded-3xl" src="src/img/test2.jpeg" alt="product image" />
+                </div>
+                <div class="px-5 pb-5 flex flex-col mt-3 justify-evenly gap-2" class="">
+                  <h5 class="text-base font-semibold tracking-tight text-main-black">Apple Watch Series 7 GPS</h5>
+                  <span class="text-main-black text-xs">Tersisa 20 | Model Pria</span>
+                  <div class="flex items-start space-x-1">
+                    <span class="text-2xl font-bold text-main-black">99k</span>
+                    <span class="text-sm text-main-black opacity-50 relative top-2">
+                      <del>150K</del>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="product-card flex flex-col w-60 max-w-sm rounded-3xl shadow-[0px_10px_15px_-3px_rgba(24,_22,_22,_0.1)]">
+              <a href="./product.html">
+                <div class="h-2/3">
+                  <img class="w-full h-full object-cover rounded-3xl" src="src/img/test2.jpeg" alt="product image" />
+                </div>
+                <div class="px-5 pb-5 flex flex-col mt-3 justify-evenly gap-2" class="">
+                  <h5 class="text-base font-semibold tracking-tight text-main-black">Apple Watch Series 7 GPS</h5>
+                  <span class="text-main-black text-xs">Tersisa 20 | Model Pria</span>
+                  <div class="flex items-start space-x-1">
+                    <span class="text-2xl font-bold text-main-black">99k</span>
+                    <span class="text-sm text-main-black opacity-50 relative top-2">
+                      <del>150K</del>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="product-card flex flex-col w-60 max-w-sm rounded-3xl shadow-[0px_10px_15px_-3px_rgba(24,_22,_22,_0.1)]">
+              <a href="./product.html">
+                <div class="h-2/3">
+                  <img class="w-full h-full object-cover rounded-3xl" src="src/img/test2.jpeg" alt="product image" />
+                </div>
+                <div class="px-5 pb-5 flex flex-col mt-3 justify-evenly gap-2" class="">
+                  <h5 class="text-base font-semibold tracking-tight text-main-black">Apple Watch Series 7 GPS</h5>
+                  <span class="text-main-black text-xs">Tersisa 20 | Model Pria</span>
+                  <div class="flex items-start space-x-1">
+                    <span class="text-2xl font-bold text-main-black">99k</span>
+                    <span class="text-sm text-main-black opacity-50 relative top-2">
+                      <del>150K</del>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- END HALAMAN KATEGORI -->
+
+    <!-- HALAMAN TESTIMONI -->
+    <div id="testimoni" class="flex flex-col justify-evenly p-8">
+      <p class="text-center text-main-black text-xl sm:text-lg md:text-2xl font-bold p-8">Kepuasan Pelanggan Adalah Prioritas Kami</p>
+
+      <div class="flex flex-wrap items-center justify-center gap-8">
+        <div id="test1" class="shadow-[2px_3px_10px_0px_rgba(0,_0,_0,_0.1)] p-6 rounded-xl flex flex-col gap-3 w-fit" style="height: 250px">
+          <div class="flex items-center flex-col gap-3">
+            <img src="src/img/test1.jpeg" alt="" class="w-[50px] h-auto rounded-full object-cover" />
+            <div class="flex flex-col items-center">
+              <p class="font-semibold flex items-center gap-1">
+                Karina
+                <img src="src/img/Approval.svg" alt="" class="w-4 h-4" />
+              </p>
+              <p class="text-main-black text-xs">@katarinabluu</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-700 text-center">"Jam tangannya mewah dan nyaman dipakai. Worth it banget untuk harga segini!"</p>
+        </div>
+
+        <div id="test1" class="shadow-[2px_3px_10px_0px_rgba(0,_0,_0,_0.1)] p-6 rounded-xl flex flex-col gap-3 w-fit h-fit">
+          <div class="flex items-center flex-col gap-3">
+            <img src="src/img/test1.jpeg" alt="" class="w-[50px] h-auto rounded-full object-cover" />
+            <div class="flex flex-col items-center">
+              <p class="font-semibold flex items-center gap-1">
+                Karina
+                <img src="src/img/Approval.svg" alt="" class="w-4 h-4" />
+              </p>
+              <p class="text-main-black text-xs">@katarinabluu</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-700 text-center">"Pelayanan benar-benar memuaskan! Transaksi lancar, update pengiriman jelas, dan produk sesuai ekspektasi."</p>
+        </div>
+
+        <div id="test1" class="shadow-[2px_3px_10px_0px_rgba(0,_0,_0,_0.1)] p-6 rounded-xl flex flex-col gap-3 w-fit h-fit">
+          <div class="flex items-center flex-col gap-3">
+            <img src="src/img/test1.jpeg" alt="" class="w-[50px] h-auto rounded-full object-cover" />
+            <div class="flex flex-col items-center">
+              <p class="font-semibold flex items-center gap-1">
+                Karina
+                <img src="src/img/Approval.svg" alt="" class="w-4 h-4" />
+              </p>
+              <p class="text-main-black text-xs">@katarinabluu</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-700 text-center">"Sudah lama cari jam tangan seperti ini. Nyaman dipakai, awet, dan bikin makin percaya diri. Highly recommended!."</p>
+        </div>
+        <div id="test1" class="shadow-[2px_3px_10px_0px_rgba(0,_0,_0,_0.1)] p-6 rounded-xl flex flex-col gap-3 w-fit h-fit">
+          <div class="flex items-center flex-col gap-3">
+            <img src="src/img/test1.jpeg" alt="" class="w-[50px] h-auto rounded-full object-cover" />
+            <div class="flex flex-col items-center">
+              <p class="font-semibold flex items-center gap-1">
+                Karina
+                <img src="src/img/Approval.svg" alt="" class="w-4 h-4" />
+              </p>
+              <p class="text-main-black text-xs">@katarinabluu</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-700 text-center">"Pelayanan super ramah dan responsif! Tanya-tanya langsung dijawab dengan detail. Belanja di sini jadi nyaman banget!."</p>
+        </div>
+
+        <div id="test1" class="shadow-[2px_3px_10px_0px_rgba(0,_0,_0,_0.1)] p-6 rounded-xl flex flex-col gap-3 w-fit h-fit">
+          <div class="flex items-center flex-col gap-3">
+            <img src="src/img/test1.jpeg" alt="" class="w-[50px] h-auto rounded-full object-cover" />
+            <div class="flex flex-col items-center">
+              <p class="font-semibold flex items-center gap-1">
+                Karina
+                <img src="src/img/Approval.svg" alt="" class="w-4 h-4" />
+              </p>
+              <p class="text-main-black text-xs">@katarinabluu</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-700 text-center">"Pelayanan super ramah dan responsif! Tanya-tanya langsung dijawab dengan detail. Belanja di sini jadi nyaman banget!."</p>
+        </div>
+        <div id="test1" class="shadow-[2px_3px_10px_0px_rgba(0,_0,_0,_0.1)] p-6 rounded-xl flex flex-col gap-3 w-fit h-fit">
+          <div class="flex items-center flex-col gap-3">
+            <img src="src/img/test1.jpeg" alt="" class="w-[50px] h-auto rounded-full object-cover" />
+            <div class="flex flex-col items-center">
+              <p class="font-semibold flex items-center gap-1">
+                Karina
+                <img src="src/img/Approval.svg" alt="" class="w-4 h-4" />
+              </p>
+              <p class="text-main-black text-xs">@katarinabluu</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-700 text-center">"Pelayanan super ramah dan responsif! Tanya-tanya langsung dijawab dengan detail. Belanja di sini jadi nyaman banget!."</p>
+        </div>
+      </div>
+    </div>
+    <!-- END HALAMAN TESTIMONI -->
+
+    <div class="p-10 font-bold">
+      <p class="text-center text-main-black text-xl sm:text-lg md:text-2xl">Ada masalah dengan jam tanganmu? Yuk, isi form kontak dan kami bantu beresin!</p>
+    </div>
+
+    <!-- HALAMAN KONTAK -->
+    <div id="kontak" class="h-4/5 p-10 flex items-center justify-center sm:h-3/4 md:h-2/4">
+      <div id="kontak-box" class="w-full h-fit shadow-[2px_3px_10px_0px_rgba(0,_0,_0,_0.1)] flex flex-row flex-wrap items-center justify-evenly p-8 rounded-xl">
+        <img src="src/img/Male specialist working in support service.svg" alt="" class="w-96 h-auto" />
+
+        <div id="form-container" class="w-[400px]">
+          <p class="font-medium text-main-black">Ada Pertanyaan?</p>
+          <p class="font-bold text-2xl text-main-black"><span class="text-dark-purple">Kami</span> Siap Membantu!</p>
+
+          <form id="form" class="flex flex-col gap-4 mt-4">
+            <div id="input-atas" class="flex flex-col gap-x-5 gap-y-4 sm:flex-col md:flex-row">
+              <div id="nama" class="flex flex-col w-full">
+                <label for="name" class="text-sm">Nama Lengkap</label>
+                <input type="text" name="name" id="name" required class="bg-main-gray text-sm px-4 py-2 rounded w-full" placeholder="Ex: John Doe" />
+              </div>
+              <div id="nomor" class="flex flex-col w-full">
+                <label for="email" class="text-sm">Email</label>
+                <input type="email" name="email" id="email" required class="bg-main-gray text-sm px-4 py-2 rounded w-full" placeholder="Ex: johndoe10@gmail.com" />
+              </div>
+            </div>
+
+            <div id="pesan" class="flex flex-col">
+              <label for="message" class="text-sm">Pesan</label>
+              <textarea name="message" id="message" required class="bg-main-gray text-sm px-4 py-2 rounded w-full" placeholder="Ex: Aku punya jam tangan rusak"></textarea>
+            </div>
+
+            <button
+              type="submit"
+              id="submit-btn"
+              class="bg-main-green p-3 border rounded-lg text-main-white font-medium hover:border hover:border-solid hover:border-main-green hover:text-main-green hover:bg-main-white active:bg-main-gray active:bg-opacity-100 active:text-main-green transition opacity-50 cursor-not-allowed"
+              disabled
+            >
+              Kirim Pesan
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- END HALAMAN KONTAK -->
+
+    <!-- FOOTER -->
+
+    <footer class="">
+      <div class="w-full max-w-screen-xl mx-auto p-4 flex flex-col justify-around md:py-8">
+        <div class="flex justify-between flex-col items-center gap-y-5 sm:items-center sm:flex-col md:flex-row">
+          <a href="" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+            <img src="src/img/Logo Yuwin Watch putih 1.svg" class="w-[50px] h-[50px]" alt="Flowbite Logo" />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap text-main-white">Yuwin Watch</span>
+          </a>
+          <ul class="flex flex-wrap gap-x-4 items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+            <li>
+              <a href=""
+                ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                  <g
+                    fill="#fbf7ff"
+                    fill-rule="nonzero"
+                    stroke="none"
+                    stroke-width="1"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    stroke-miterlimit="10"
+                    stroke-dasharray=""
+                    stroke-dashoffset="0"
+                    font-family="none"
+                    font-weight="none"
+                    font-size="none"
+                    text-anchor="none"
+                    style="mix-blend-mode: normal"
+                  >
+                    <g transform="scale(5.12,5.12)">
+                      <path
+                        d="M25,3c-12.15,0 -22,9.85 -22,22c0,11.03 8.125,20.137 18.712,21.728v-15.897h-5.443v-5.783h5.443v-3.848c0,-6.371 3.104,-9.168 8.399,-9.168c2.536,0 3.877,0.188 4.512,0.274v5.048h-3.612c-2.248,0 -3.033,2.131 -3.033,4.533v3.161h6.588l-0.894,5.783h-5.694v15.944c10.738,-1.457 19.022,-10.638 19.022,-21.775c0,-12.15 -9.85,-22 -22,-22z"
+                      ></path>
+                    </g>
+                  </g></svg
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                  <g
+                    fill="#fbf7ff"
+                    fill-rule="nonzero"
+                    stroke="none"
+                    stroke-width="1"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    stroke-miterlimit="10"
+                    stroke-dasharray=""
+                    stroke-dashoffset="0"
+                    font-family="none"
+                    font-weight="none"
+                    font-size="none"
+                    text-anchor="none"
+                    style="mix-blend-mode: normal"
+                  >
+                    <g transform="scale(8.53333,8.53333)">
+                      <path
+                        d="M9.99805,3c-3.859,0 -6.99805,3.14195 -6.99805,7.00195v10c0,3.859 3.14195,6.99805 7.00195,6.99805h10c3.859,0 6.99805,-3.14195 6.99805,-7.00195v-10c0,-3.859 -3.14195,-6.99805 -7.00195,-6.99805zM22,7c0.552,0 1,0.448 1,1c0,0.552 -0.448,1 -1,1c-0.552,0 -1,-0.448 -1,-1c0,-0.552 0.448,-1 1,-1zM15,9c3.309,0 6,2.691 6,6c0,3.309 -2.691,6 -6,6c-3.309,0 -6,-2.691 -6,-6c0,-3.309 2.691,-6 6,-6zM15,11c-2.20914,0 -4,1.79086 -4,4c0,2.20914 1.79086,4 4,4c2.20914,0 4,-1.79086 4,-4c0,-2.20914 -1.79086,-4 -4,-4z"
+                      ></path>
+                    </g>
+                  </g></svg
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                  <g
+                    fill="#fbf7ff"
+                    fill-rule="nonzero"
+                    stroke="none"
+                    stroke-width="1"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    stroke-miterlimit="10"
+                    stroke-dasharray=""
+                    stroke-dashoffset="0"
+                    font-family="none"
+                    font-weight="none"
+                    font-size="none"
+                    text-anchor="none"
+                    style="mix-blend-mode: normal"
+                  >
+                    <g transform="scale(5.12,5.12)">
+                      <path
+                        d="M41,4h-32c-2.757,0 -5,2.243 -5,5v32c0,2.757 2.243,5 5,5h32c2.757,0 5,-2.243 5,-5v-32c0,-2.757 -2.243,-5 -5,-5zM37.006,22.323c-0.227,0.021 -0.457,0.035 -0.69,0.035c-2.623,0 -4.928,-1.349 -6.269,-3.388c0,5.349 0,11.435 0,11.537c0,4.709 -3.818,8.527 -8.527,8.527c-4.709,0 -8.527,-3.818 -8.527,-8.527c0,-4.709 3.818,-8.527 8.527,-8.527c0.178,0 0.352,0.016 0.527,0.027v4.202c-0.175,-0.021 -0.347,-0.053 -0.527,-0.053c-2.404,0 -4.352,1.948 -4.352,4.352c0,2.404 1.948,4.352 4.352,4.352c2.404,0 4.527,-1.894 4.527,-4.298c0,-0.095 0.042,-19.594 0.042,-19.594h4.016c0.378,3.591 3.277,6.425 6.901,6.685z"
+                      ></path>
+                    </g>
+                  </g></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <span class="block text-center text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="" class="hover:underline">Yuwin Watch™</a>. All Rights Reserved.</span>
+      </div>
+    </footer>
+
+    <!-- END FOOTER -->
+    <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.js"></script>
+
+    <script type="module" src="/src/main.js"></script>
+    <script src="./src/whatsapp.js"></script>
+  </body>
+</html>

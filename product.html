@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produk</title>
+    <link href="./src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="icon" type="image/svg+xml" href="src/img/Logo Yuwin Watch putih 1.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-main-white max-w-screen-2xl mx-auto overflow-y-scroll">
+    <!-- Nav -->
+    <nav class="fixed w-full shadow-lg z-10 opacity-95 max-w-screen-2xl mx-auto">
+      <div class="mx-auto max-w-7xl lg:px-8">
+        <div class="flex h-16 items-center justify-between p-4">
+          <!-- KIRI: Logo dan Nama -->
+          <div class="flex items-center gap-x-4">
+            <img class="h-12 w-auto" src="src/img/Logo Yuwin Watch putih 1.svg" alt="Your Company" />
+            <p class="text-main-white font-bold text-xl">Yuwin Watch</p>
+          </div>
+
+          <!-- KANAN: Navigasi dan Hamburger -->
+          <div class="flex items-center gap-x-6">
+            <!-- Menu Navigasi (Desktop) -->
+            <div class="hidden sm:block">
+              <div class="flex space-x-4">
+                <a href="./index.html/#utama" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Beranda</a>
+                <a href="./index.html/#tentang" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Tentang</a>
+                <a href="./index.html/#produk" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Produk</a>
+                <a href="./index.html/#kontak" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Kontak</a>
+              </div>
+            </div>
+
+            <!-- Hamburger (Mobile) -->
+            <div class="sm:hidden">
+              <button
+                id="hamburger-button"
+                type="button"
+                class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Open main menu</span>
+                <svg class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <svg class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="sm:hidden hidden" id="mobile-menu">
+          <div class="bg-main-black space-y-1 px-2 pb-3 pt-2">
+            <a href="./index.html/#utama" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Beranda</a>
+            <a href="./index.html/#tentang" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Tentang</a>
+            <a href="./index.html/#produk" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Produk</a>
+            <a href="./index.html/#kontak" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Kontak</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- END Nav -->
+
+    <!-- Product -->
+    <div id="utama-product" class="py-20 flex justify-between items-center">
+      <div id="product" class="flex flex-col md:flex-row justify-between px-6">
+        <div id="main-img-product" class="flex justify-center items-center w-full h-auto">
+          <div id="img-product">
+            <img src="./src/img/test1.jpeg" alt="" class="w-full sm:min-w-96 h-auto" />
+          </div>
+        </div>
+
+        <div id="main-desk" class="p-8">
+          <div id="deskripsi" class="flex flex-col gap-3">
+            <p class="text-main-black text-3xl sm:text-4xl md:text-6xl">Apple Watch Series 7 GPS</p>
+            <p class="text-main-black relative top-3 text-sm sm:text-md">Tersisa 20 | Model Pria</p>
+            <div id="deskripsi-atas" class="flex flex-row justify-between text-center py-4">
+              <div id="product-price">
+                <span class="text-4xl md:text-5xl font-bold text-main-black">99k</span>
+                <span class="text-base sm:text-lg md:text-2xl text-main-black opacity-50">
+                  <del>150K</del>
+                </span>
+              </div>
+            </div>
+            <div class="w-full text-justify text-sm sm:text-base md:text-xl">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem distinctio necessitatibus quibusdam cumque dolore. Sequi nihil obcaecati culpa quae officiis, nemo rerum vitae accusantium impedit, blanditiis dolorem assumenda
+                odit facilis.
+              </p>
+            </div>
+            <div id="main-buy-button" class="flex flex-col md:flex-row gap-8 rounded-lg">
+              <div id="main-jumlah" class="flex flex-row shadow-md">
+                <p class="p-3">Jumlah</p>
+                <button id="" class="text-2xl p-3">-</button>
+                <p class="text-lg p-3">1</p>
+                <button id="" class="text-2xl p-3">+</button>
+              </div>
+
+              <button id="buy-button" class="bg-dark-purple p-3 border rounded-lg text-main-white font-medium hover:border hover:border-solid hover:bg-main-white active:bg-main-gray active:bg-opacity-50 transition">Beli Sekarang</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--END Product -->
+
+    <footer class="">
+      <div class="w-full max-w-screen-xl mx-auto p-4 flex flex-col justify-around md:py-8">
+        <div class="flex justify-between flex-col items-center gap-y-5 sm:items-center sm:flex-col md:flex-row">
+          <a href="" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+            <img src="src/img/Logo Yuwin Watch putih 1.svg" class="w-[50px] h-[50px]" alt="Flowbite Logo" />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap text-main-white">Yuwin Watch</span>
+          </a>
+          <ul class="flex flex-wrap gap-x-4 items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+            <li>
+              <a href=""
+                ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                  <g
+                    fill="#fbf7ff"
+                    fill-rule="nonzero"
+                    stroke="none"
+                    stroke-width="1"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    stroke-miterlimit="10"
+                    stroke-dasharray=""
+                    stroke-dashoffset="0"
+                    font-family="none"
+                    font-weight="none"
+                    font-size="none"
+                    text-anchor="none"
+                    style="mix-blend-mode: normal"
+                  >
+                    <g transform="scale(5.12,5.12)">
+                      <path
+                        d="M25,3c-12.15,0 -22,9.85 -22,22c0,11.03 8.125,20.137 18.712,21.728v-15.897h-5.443v-5.783h5.443v-3.848c0,-6.371 3.104,-9.168 8.399,-9.168c2.536,0 3.877,0.188 4.512,0.274v5.048h-3.612c-2.248,0 -3.033,2.131 -3.033,4.533v3.161h6.588l-0.894,5.783h-5.694v15.944c10.738,-1.457 19.022,-10.638 19.022,-21.775c0,-12.15 -9.85,-22 -22,-22z"
+                      ></path>
+                    </g>
+                  </g></svg
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                  <g
+                    fill="#fbf7ff"
+                    fill-rule="nonzero"
+                    stroke="none"
+                    stroke-width="1"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    stroke-miterlimit="10"
+                    stroke-dasharray=""
+                    stroke-dashoffset="0"
+                    font-family="none"
+                    font-weight="none"
+                    font-size="none"
+                    text-anchor="none"
+                    style="mix-blend-mode: normal"
+                  >
+                    <g transform="scale(8.53333,8.53333)">
+                      <path
+                        d="M9.99805,3c-3.859,0 -6.99805,3.14195 -6.99805,7.00195v10c0,3.859 3.14195,6.99805 7.00195,6.99805h10c3.859,0 6.99805,-3.14195 6.99805,-7.00195v-10c0,-3.859 -3.14195,-6.99805 -7.00195,-6.99805zM22,7c0.552,0 1,0.448 1,1c0,0.552 -0.448,1 -1,1c-0.552,0 -1,-0.448 -1,-1c0,-0.552 0.448,-1 1,-1zM15,9c3.309,0 6,2.691 6,6c0,3.309 -2.691,6 -6,6c-3.309,0 -6,-2.691 -6,-6c0,-3.309 2.691,-6 6,-6zM15,11c-2.20914,0 -4,1.79086 -4,4c0,2.20914 1.79086,4 4,4c2.20914,0 4,-1.79086 4,-4c0,-2.20914 -1.79086,-4 -4,-4z"
+                      ></path>
+                    </g>
+                  </g></svg
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                  <g
+                    fill="#fbf7ff"
+                    fill-rule="nonzero"
+                    stroke="none"
+                    stroke-width="1"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    stroke-miterlimit="10"
+                    stroke-dasharray=""
+                    stroke-dashoffset="0"
+                    font-family="none"
+                    font-weight="none"
+                    font-size="none"
+                    text-anchor="none"
+                    style="mix-blend-mode: normal"
+                  >
+                    <g transform="scale(5.12,5.12)">
+                      <path
+                        d="M41,4h-32c-2.757,0 -5,2.243 -5,5v32c0,2.757 2.243,5 5,5h32c2.757,0 5,-2.243 5,-5v-32c0,-2.757 -2.243,-5 -5,-5zM37.006,22.323c-0.227,0.021 -0.457,0.035 -0.69,0.035c-2.623,0 -4.928,-1.349 -6.269,-3.388c0,5.349 0,11.435 0,11.537c0,4.709 -3.818,8.527 -8.527,8.527c-4.709,0 -8.527,-3.818 -8.527,-8.527c0,-4.709 3.818,-8.527 8.527,-8.527c0.178,0 0.352,0.016 0.527,0.027v4.202c-0.175,-0.021 -0.347,-0.053 -0.527,-0.053c-2.404,0 -4.352,1.948 -4.352,4.352c0,2.404 1.948,4.352 4.352,4.352c2.404,0 4.527,-1.894 4.527,-4.298c0,-0.095 0.042,-19.594 0.042,-19.594h4.016c0.378,3.591 3.277,6.425 6.901,6.685z"
+                      ></path>
+                    </g>
+                  </g></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <span class="block text-center text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="" class="hover:underline">Yuwin Watch™</a>. All Rights Reserved.</span>
+      </div>
+    </footer>
+  </body>
+</html>
